@@ -2,7 +2,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .main-content {
@@ -53,6 +53,8 @@ header .content {
 
 header .logo {
   flex: 1;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 header nav ul {
@@ -60,7 +62,7 @@ header nav ul {
 }
 
 nav li {
-  padding-left: 3.5rem;
+  padding-left: 3rem;
 }
 
 nav a {
@@ -68,10 +70,15 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  transition: font-size ease 0.3s;
+}
+
+nav a:hover {
+  font-size: 22px;
 }
 
 nav .button {
-  padding: .1875rem .5rem;
+  padding: 0.1875rem 0.5rem;
   background-color: #9dc20b;
   line-height: 1.6;
   color: white;
@@ -83,7 +90,7 @@ nav li:last-child {
 
 header .icon {
   width: 1rem;
-  padding-left: .75rem;
+  padding-left: 2.5rem;
 }
 
 header .mobile {
@@ -111,7 +118,7 @@ header .mobile {
   }
 
   header .content {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   header .mobile ul {
@@ -133,7 +140,7 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  background-image: url('../images/banner-landingpage.jpg');
+  background-image: url("../images/banner-landingpage.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -176,7 +183,7 @@ header .mobile {
 
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
-  padding-bottom: .75rem;
+  padding-bottom: 0.75rem;
 }
 
 #sign-up-cta .button {
@@ -244,6 +251,15 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  cursor: pointer;
+}
+
+.feature:hover {
+  border: 2px solid black;
+}
+
+.feature:active {
+  background-color: #cacaca;
 }
 
 .feature .image-container {
@@ -257,7 +273,7 @@ header .mobile {
 }
 
 .feature h2 {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
@@ -276,7 +292,7 @@ header .mobile {
   }
 
   .feature {
-    margin: 0px .5rem;
+    margin: 0px 0.5rem;
     padding: 1rem;
   }
 
@@ -286,7 +302,7 @@ header .mobile {
   }
 
   .feature h3 {
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 1.4;
   }
 }
@@ -315,7 +331,7 @@ header .mobile {
 }
 
 #filters-section .content {
-  padding: 0 .625rem;
+  padding: 0 0.625rem;
   margin-bottom: 5rem;
 }
 
@@ -348,14 +364,14 @@ header .mobile {
   }
 
   #filters-section .content h2 {
-    padding-bottom: .625rem;
+    padding-bottom: 0.625rem;
     font-size: 1.125rem;
     line-height: 1.3;
     font-weight: normal;
   }
 
   #filters-section .content h3 {
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 1.4;
   }
 
@@ -403,7 +419,7 @@ header .mobile {
 @media only screen and (max-width: 600px) {
   #quotes-section .content {
     flex-flow: column;
-    padding: 1.875rem .625rem;
+    padding: 1.875rem 0.625rem;
   }
 
   #quotes-section .quote {
@@ -428,7 +444,7 @@ footer {
 footer .content {
   color: white;
   display: flex;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 footer .copyright {
@@ -437,6 +453,6 @@ footer .copyright {
 
 @media only screen and (max-width: 600px) {
   footer .content {
-    font-size: .625rem;
+    font-size: 0.625rem;
   }
 }
